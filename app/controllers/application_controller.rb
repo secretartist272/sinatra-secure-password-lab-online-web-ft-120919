@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
             session[:user_id] = user.id 
             redirect to "/users"
         else
-          
+          redirect ''
             erb :"/users/new"
         end
 
